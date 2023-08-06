@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intercom_composer_empty_view_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/empty_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/intercom_composer_empty_view_title"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/empty_text_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/intercom_composer_empty_view_subtitle"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/empty_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/intercom_composer_blue"
+        android:minHeight="40dp"
+        android:minWidth="120dp"
+        android:paddingBottom="11dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="11dp"
+        android:textColor="@color/intercom_composer_white"
+        android:textSize="15sp"
+        android:theme="@style/intercom_composer_tap_to_retry_button"/>
+
+</LinearLayout>

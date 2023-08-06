@@ -1,0 +1,139 @@
+{
+  "version": 3,
+  "targets": {
+    "MonoAndroid,Version=v10.0": {
+      "NuGet.Build.Packaging/0.2.2": {
+        "type": "package",
+        "build": {
+          "build/NuGet.Build.Packaging.props": {},
+          "build/NuGet.Build.Packaging.targets": {}
+        }
+      }
+    },
+    "MonoAndroid,Version=v10.0/win": {
+      "NuGet.Build.Packaging/0.2.2": {
+        "type": "package",
+        "build": {
+          "build/NuGet.Build.Packaging.props": {},
+          "build/NuGet.Build.Packaging.targets": {}
+        }
+      }
+    },
+    "MonoAndroid,Version=v10.0/win-x64": {
+      "NuGet.Build.Packaging/0.2.2": {
+        "type": "package",
+        "build": {
+          "build/NuGet.Build.Packaging.props": {},
+          "build/NuGet.Build.Packaging.targets": {}
+        }
+      }
+    },
+    "MonoAndroid,Version=v10.0/win-x86": {
+      "NuGet.Build.Packaging/0.2.2": {
+        "type": "package",
+        "build": {
+          "build/NuGet.Build.Packaging.props": {},
+          "build/NuGet.Build.Packaging.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NuGet.Build.Packaging/0.2.2": {
+      "sha512": "0NpDbrsJ+kTKtOEQH0RVbZmpsnCOBHkznA9Kov+u2xul+e2M10PCUO5a4ATZbuStOMcS/lSBYae/W/pCtJOL+Q==",
+      "type": "package",
+      "path": "nuget.build.packaging/0.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/ApiIntersect.exe",
+        "build/ApiIntersect.exe.config",
+        "build/GenerateReferenceAssembly.csproj",
+        "build/ICSharpCode.Decompiler.dll",
+        "build/ICSharpCode.NRefactory.CSharp.dll",
+        "build/ICSharpCode.NRefactory.Cecil.dll",
+        "build/ICSharpCode.NRefactory.Xml.dll",
+        "build/ICSharpCode.NRefactory.dll",
+        "build/Mono.Cecil.Mdb.dll",
+        "build/Mono.Cecil.Pdb.dll",
+        "build/Mono.Cecil.Rocks.dll",
+        "build/Mono.Cecil.dll",
+        "build/Mono.Options.dll",
+        "build/NuGet.Build.Packaging.Authoring.props",
+        "build/NuGet.Build.Packaging.Authoring.targets",
+        "build/NuGet.Build.Packaging.Compatibility.props",
+        "build/NuGet.Build.Packaging.Inference.targets",
+        "build/NuGet.Build.Packaging.Legacy.props",
+        "build/NuGet.Build.Packaging.Legacy.targets",
+        "build/NuGet.Build.Packaging.ReferenceAssembly.targets",
+        "build/NuGet.Build.Packaging.Tasks.dll",
+        "build/NuGet.Build.Packaging.Tasks.pdb",
+        "build/NuGet.Build.Packaging.Version.props",
+        "build/NuGet.Build.Packaging.props",
+        "build/NuGet.Build.Packaging.targets",
+        "buildMultiTargeting/NuGet.Build.Packaging.MultiTargeting.targets",
+        "nuget.build.packaging.0.2.2.nupkg.sha512",
+        "nuget.build.packaging.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "MonoAndroid,Version=v10.0": [
+      "NuGet.Build.Packaging >= 0.2.2"
+    ]
+  },
+  "packageFolders": {
+    "/Users/kumargouraw/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Gallery.Android/Xamarin.Intercom.Composer.Gallery.Android.csproj",
+      "projectName": "Xamarin.Intercom.Composer.Gallery.Android",
+      "projectPath": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Gallery.Android/Xamarin.Intercom.Composer.Gallery.Android.csproj",
+      "packagesPath": "/Users/kumargouraw/.nuget/packages/",
+      "outputPath": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Gallery.Android/obj/",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "/Users/kumargouraw/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "monoandroid10.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/v3/index.json": {},
+        "https://tylertech.jfrog.io/artifactory/api/nuget/v3/nuget": {}
+      },
+      "frameworks": {
+        "monoandroid10.0": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "monoandroid10.0": {
+        "dependencies": {
+          "NuGet.Build.Packaging": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.2.2, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

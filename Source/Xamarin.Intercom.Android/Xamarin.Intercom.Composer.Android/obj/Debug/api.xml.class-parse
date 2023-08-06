@@ -1,0 +1,3819 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.intercom.composer"
+    jni-name="com/intercom/composer">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/intercom/composer/BuildConfig;"
+      source-file-name="BuildConfig.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="APPLICATION_ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.intercom.composer&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FLAVOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;2.0.2&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="ComposerAnimationStateListener"
+      jni-signature="Lcom/intercom/composer/ComposerAnimationStateListener;"
+      source-file-name="ComposerAnimationStateListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStateChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/animation/AnimationStatus;)V">
+        <parameter
+          name="p0"
+          type="com.intercom.composer.animation.AnimationStatus"
+          jni-type="Lcom/intercom/composer/animation/AnimationStatus;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setSendButtonVisibility"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/RuntimeException;"
+      extends="java.lang.RuntimeException"
+      extends-generic-aware="java.lang.RuntimeException"
+      final="false"
+      name="ComposerException"
+      jni-signature="Lcom/intercom/composer/ComposerException;"
+      source-file-name="ComposerException.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ComposerException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="message"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/app/Fragment;"
+      extends="android.support.v4.app.Fragment"
+      extends-generic-aware="android.support.v4.app.Fragment"
+      final="false"
+      name="ComposerFragment"
+      jni-signature="Lcom/intercom/composer/ComposerFragment;"
+      source-file-name="ComposerFragment.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ComposerFragment"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="findInputForIdentifier"
+        native="false"
+        return="com.intercom.composer.input.Input"
+        jni-return="Lcom/intercom/composer/input/Input;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/intercom/composer/input/Input;">
+        <parameter
+          name="identifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastSelectedInput"
+        native="false"
+        return="com.intercom.composer.input.Input"
+        jni-return="Lcom/intercom/composer/input/Input;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/intercom/composer/input/Input;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getTextInputHeight"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hideAllInputsExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)V">
+        <parameter
+          name="visibleInputIdentifiers"
+          type="java.util.List&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newInstance"
+        native="false"
+        return="com.intercom.composer.ComposerFragment"
+        jni-return="Lcom/intercom/composer/ComposerFragment;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;ZI)Lcom/intercom/composer/ComposerFragment;">
+        <parameter
+          name="initialInputIdentifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="showKeyboardForInitialInput"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="themeColor"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAttach"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onBackPressed"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreateView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;">
+        <parameter
+          name="inflater"
+          type="android.view.LayoutInflater"
+          jni-type="Landroid/view/LayoutInflater;" />
+        <parameter
+          name="container"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroyView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="selectInput"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Z)V">
+        <parameter
+          name="identifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="showKeyboard"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setComposerHost"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/ComposerHost;)V">
+        <parameter
+          name="composerHost"
+          type="com.intercom.composer.ComposerHost"
+          jni-type="Lcom/intercom/composer/ComposerHost;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnInputSelectedListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/OnInputSelectedListener;)V">
+        <parameter
+          name="onInputSelectedListener"
+          type="com.intercom.composer.OnInputSelectedListener"
+          jni-type="Lcom/intercom/composer/OnInputSelectedListener;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="showAllInputs"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/intercom/composer/ComposerFragment;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ComposerFragment.1"
+      jni-signature="Lcom/intercom/composer/ComposerFragment$1;"
+      source-file-name="ComposerFragment.java"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/intercom/composer/ComposerFragment;"
+      enclosing-method-name="onCreateView"
+      enclosing-method-signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ComposerFragment.2"
+      jni-signature="Lcom/intercom/composer/ComposerFragment$2;"
+      source-file-name="ComposerFragment.java"
+      static="false"
+      visibility="">
+      <implements
+        name="com.intercom.composer.input.text.listener.OnSendButtonClickedListener"
+        name-generic-aware="com.intercom.composer.input.text.listener.OnSendButtonClickedListener"
+        jni-type="Lcom/intercom/composer/input/text/listener/OnSendButtonClickedListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSendButtonClicked"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/CharSequence;)V">
+        <parameter
+          name="textToBeSent"
+          type="java.lang.CharSequence"
+          jni-type="Ljava/lang/CharSequence;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="ComposerHost"
+      jni-signature="Lcom/intercom/composer/ComposerHost;"
+      source-file-name="ComposerHost.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getInputs"
+        native="false"
+        return="java.util.List&lt;com.intercom.composer.input.Input&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/intercom/composer/input/Input;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;"
+        return-not-null="true" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/widget/LinearLayout;"
+      extends="android.widget.LinearLayout"
+      extends-generic-aware="android.widget.LinearLayout"
+      final="false"
+      name="ComposerView"
+      jni-signature="Lcom/intercom/composer/ComposerView;"
+      source-file-name="ComposerView.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.intercom.composer.watcher.OnSendButtonStateChangedListener"
+        name-generic-aware="com.intercom.composer.watcher.OnSendButtonStateChangedListener"
+        jni-type="Lcom/intercom/composer/watcher/OnSendButtonStateChangedListener;" />
+      <implements
+        name="com.intercom.composer.input.text.listener.OnSendButtonClickedListener"
+        name-generic-aware="com.intercom.composer.input.text.listener.OnSendButtonClickedListener"
+        jni-type="Lcom/intercom/composer/input/text/listener/OnSendButtonClickedListener;" />
+      <implements
+        name="com.intercom.composer.input.iconbar.InputSelectedListener"
+        name-generic-aware="com.intercom.composer.input.iconbar.InputSelectedListener"
+        jni-type="Lcom/intercom/composer/input/iconbar/InputSelectedListener;" />
+      <implements
+        name="com.intercom.composer.input.iconbar.InputClickedListener"
+        name-generic-aware="com.intercom.composer.input.iconbar.InputClickedListener"
+        jni-type="Lcom/intercom/composer/input/iconbar/InputClickedListener;" />
+      <implements
+        name="com.intercom.composer.ComposerAnimationStateListener"
+        name-generic-aware="com.intercom.composer.ComposerAnimationStateListener"
+        jni-type="Lcom/intercom/composer/ComposerAnimationStateListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ComposerView"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ComposerView"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="attrs"
+          type="android.util.AttributeSet"
+          jni-type="Landroid/util/AttributeSet;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ComposerView"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;I)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="attrs"
+          type="android.util.AttributeSet"
+          jni-type="Landroid/util/AttributeSet;" />
+        <parameter
+          name="defStyleAttr"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateSendButtonVisibility"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="visible"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getInputs"
+        native="false"
+        return="java.util.List&lt;com.intercom.composer.input.Input&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/intercom/composer/input/Input;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSelectedInput"
+        native="false"
+        return="com.intercom.composer.input.Input"
+        jni-return="Lcom/intercom/composer/input/Input;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/intercom/composer/input/Input;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getTextInputHeight"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hideAllInputsExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)V">
+        <parameter
+          name="visibleInputIdentifiers"
+          type="java.util.List&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStateChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/animation/AnimationStatus;)V">
+        <parameter
+          name="animationStatus"
+          type="com.intercom.composer.animation.AnimationStatus"
+          jni-type="Lcom/intercom/composer/animation/AnimationStatus;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onBackPressed"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputClicked"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="viewHolder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputSelected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/Input;IZZ)V">
+        <parameter
+          name="newInput"
+          type="com.intercom.composer.input.Input"
+          jni-type="Lcom/intercom/composer/input/Input;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="showKeyboard"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="animateEditText"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSendButtonClicked"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/CharSequence;)V">
+        <parameter
+          name="textToBeSent"
+          type="java.lang.CharSequence"
+          jni-type="Ljava/lang/CharSequence;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="selectInput"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/Input;ZZ)Z">
+        <parameter
+          name="input"
+          type="com.intercom.composer.input.Input"
+          jni-type="Lcom/intercom/composer/input/Input;" />
+        <parameter
+          name="showKeyboard"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="animateEditText"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setComposerPagerAdapter"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/pager/ComposerPagerAdapter;)V">
+        <parameter
+          name="composerPagerAdapter"
+          type="com.intercom.composer.pager.ComposerPagerAdapter"
+          jni-type="Lcom/intercom/composer/pager/ComposerPagerAdapter;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setEditTextLayoutAnimationListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/animation/EditTextLayoutAnimatorInternalListener;)V">
+        <parameter
+          name="editTextAnimatorListener"
+          type="com.intercom.composer.animation.EditTextLayoutAnimatorInternalListener"
+          jni-type="Lcom/intercom/composer/animation/EditTextLayoutAnimatorInternalListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setFragmentManager"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v4/app/FragmentManager;)V">
+        <parameter
+          name="fragmentManager"
+          type="android.support.v4.app.FragmentManager"
+          jni-type="Landroid/support/v4/app/FragmentManager;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setInputs"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)V">
+        <parameter
+          name="inputs"
+          type="java.util.List&lt;? extends com.intercom.composer.input.Input&gt;"
+          jni-type="Ljava/util/List&lt;+Lcom/intercom/composer/input/Input;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setInputSelectedListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/OnInputSelectedListener;)V">
+        <parameter
+          name="inputSelectedListener"
+          type="com.intercom.composer.OnInputSelectedListener"
+          jni-type="Lcom/intercom/composer/OnInputSelectedListener;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnSendButtonClickListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/text/listener/OnSendButtonClickedListener;)V">
+        <parameter
+          name="onSendButtonClickListener"
+          type="com.intercom.composer.input.text.listener.OnSendButtonClickedListener"
+          jni-type="Lcom/intercom/composer/input/text/listener/OnSendButtonClickedListener;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setSendButtonVisibility"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="visibility"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="showAllInputs"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateColors"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(II)V">
+        <parameter
+          name="backgroundColorRes"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="borderColorRes"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="OnInputSelectedListener"
+      jni-signature="Lcom/intercom/composer/OnInputSelectedListener;"
+      source-file-name="OnInputSelectedListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputSelected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/Input;)V">
+        <parameter
+          name="p0"
+          type="com.intercom.composer.input.Input"
+          jni-type="Lcom/intercom/composer/input/Input;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="WindowUtil"
+      jni-signature="Lcom/intercom/composer/WindowUtil;"
+      source-file-name="WindowUtil.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="WindowUtil"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setFullscreenWindow"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/Window;I)V">
+        <parameter
+          name="window"
+          type="android.view.Window"
+          jni-type="Landroid/view/Window;" />
+        <parameter
+          name="color"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.animation"
+    jni-name="com/intercom/composer/animation">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.intercom.composer.animation.AnimationStatus&gt;"
+      final="true"
+      name="AnimationStatus"
+      jni-signature="Lcom/intercom/composer/animation/AnimationStatus;"
+      source-file-name="AnimationStatus.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.intercom.composer.animation.AnimationStatus"
+        jni-return="Lcom/intercom/composer/animation/AnimationStatus;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/intercom/composer/animation/AnimationStatus;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.intercom.composer.animation.AnimationStatus[]"
+        jni-return="[Lcom/intercom/composer/animation/AnimationStatus;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/intercom/composer/animation/AnimationStatus;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="HIDDEN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.intercom.composer.animation.AnimationStatus"
+        type-generic-aware="com.intercom.composer.animation.AnimationStatus"
+        jni-signature="Lcom/intercom/composer/animation/AnimationStatus;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="HIDING"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.intercom.composer.animation.AnimationStatus"
+        type-generic-aware="com.intercom.composer.animation.AnimationStatus"
+        jni-signature="Lcom/intercom/composer/animation/AnimationStatus;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="SHOWING"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.intercom.composer.animation.AnimationStatus"
+        type-generic-aware="com.intercom.composer.animation.AnimationStatus"
+        jni-signature="Lcom/intercom/composer/animation/AnimationStatus;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="SHOWN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.intercom.composer.animation.AnimationStatus"
+        type-generic-aware="com.intercom.composer.animation.AnimationStatus"
+        jni-signature="Lcom/intercom/composer/animation/AnimationStatus;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UNKNOWN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.intercom.composer.animation.AnimationStatus"
+        type-generic-aware="com.intercom.composer.animation.AnimationStatus"
+        jni-signature="Lcom/intercom/composer/animation/AnimationStatus;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EditTextLayoutAnimator"
+      jni-signature="Lcom/intercom/composer/animation/EditTextLayoutAnimator;"
+      source-file-name="EditTextLayoutAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="EditTextLayoutAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="editText"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hideEditText"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setEditTextLayoutAnimatorListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/animation/EditTextLayoutAnimatorInternalListener;)V">
+        <parameter
+          name="animatorListener"
+          type="com.intercom.composer.animation.EditTextLayoutAnimatorInternalListener"
+          jni-type="Lcom/intercom/composer/animation/EditTextLayoutAnimatorInternalListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="showEditText"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="animated"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/intercom/composer/animation/EditTextLayoutAnimator;"
+      jni-extends="Landroid/animation/AnimatorListenerAdapter;"
+      extends="android.animation.AnimatorListenerAdapter"
+      extends-generic-aware="android.animation.AnimatorListenerAdapter"
+      final="false"
+      name="EditTextLayoutAnimator.1"
+      jni-signature="Lcom/intercom/composer/animation/EditTextLayoutAnimator$1;"
+      source-file-name="EditTextLayoutAnimator.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/intercom/composer/animation/EditTextLayoutAnimator;"
+      jni-extends="Landroid/animation/AnimatorListenerAdapter;"
+      extends="android.animation.AnimatorListenerAdapter"
+      extends-generic-aware="android.animation.AnimatorListenerAdapter"
+      final="false"
+      name="EditTextLayoutAnimator.2"
+      jni-signature="Lcom/intercom/composer/animation/EditTextLayoutAnimator$2;"
+      source-file-name="EditTextLayoutAnimator.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/intercom/composer/animation/EditTextLayoutAnimator;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EditTextLayoutAnimator.3"
+      jni-signature="Lcom/intercom/composer/animation/EditTextLayoutAnimator$3;"
+      source-file-name="EditTextLayoutAnimator.java"
+      static="false"
+      visibility="">
+      <implements
+        name="android.animation.ValueAnimator.AnimatorUpdateListener"
+        name-generic-aware="android.animation.ValueAnimator.AnimatorUpdateListener"
+        jni-type="Landroid/animation/ValueAnimator$AnimatorUpdateListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationUpdate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/ValueAnimator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.ValueAnimator"
+          jni-type="Landroid/animation/ValueAnimator;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EditTextLayoutAnimatorInternalListener"
+      jni-signature="Lcom/intercom/composer/animation/EditTextLayoutAnimatorInternalListener;"
+      source-file-name="EditTextLayoutAnimatorInternalListener.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="EditTextLayoutAnimatorInternalListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+      </constructor>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="EditTextLayoutAnimatorListener"
+      jni-signature="Lcom/intercom/composer/animation/EditTextLayoutAnimatorListener;"
+      source-file-name="EditTextLayoutAnimatorListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onEditTextLayoutAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/animation/AnimationStatus;)V">
+        <parameter
+          name="p0"
+          type="com.intercom.composer.animation.AnimationStatus"
+          jni-type="Lcom/intercom/composer/animation/AnimationStatus;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/intercom/composer/animation/SendButtonAnimatorListener;"
+      extends="com.intercom.composer.animation.SendButtonAnimatorListener"
+      extends-generic-aware="com.intercom.composer.animation.SendButtonAnimatorListener"
+      final="false"
+      name="HideSendButtonAnimatorListener"
+      jni-signature="Lcom/intercom/composer/animation/HideSendButtonAnimatorListener;"
+      source-file-name="HideSendButtonAnimatorListener.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="HideSendButtonAnimatorListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;Lcom/intercom/composer/pager/ComposerPagerAdapter;Landroid/support/v7/widget/RecyclerView$Adapter;Lcom/intercom/composer/ComposerAnimationStateListener;)V">
+        <parameter
+          name="inputs"
+          type="java.util.List&lt;com.intercom.composer.input.Input&gt;"
+          jni-type="Ljava/util/List&lt;Lcom/intercom/composer/input/Input;&gt;;" />
+        <parameter
+          name="composerPagerAdapter"
+          type="com.intercom.composer.pager.ComposerPagerAdapter"
+          jni-type="Lcom/intercom/composer/pager/ComposerPagerAdapter;" />
+        <parameter
+          name="recyclerAdapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+        <parameter
+          name="animationStateListener"
+          type="com.intercom.composer.ComposerAnimationStateListener"
+          jni-type="Lcom/intercom/composer/ComposerAnimationStateListener;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="p0"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SendButtonAnimator"
+      jni-signature="Lcom/intercom/composer/animation/SendButtonAnimator;"
+      source-file-name="SendButtonAnimator.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SendButtonAnimator"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;Landroid/widget/ImageView;Lcom/intercom/composer/animation/ShowSendButtonAnimatorListener;Lcom/intercom/composer/animation/HideSendButtonAnimatorListener;)V">
+        <parameter
+          name="background"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="button"
+          type="android.widget.ImageView"
+          jni-type="Landroid/widget/ImageView;" />
+        <parameter
+          name="showSendButtonAnimatorListener"
+          type="com.intercom.composer.animation.ShowSendButtonAnimatorListener"
+          jni-type="Lcom/intercom/composer/animation/ShowSendButtonAnimatorListener;" />
+        <parameter
+          name="hideSendButtonAnimatorListener"
+          type="com.intercom.composer.animation.HideSendButtonAnimatorListener"
+          jni-type="Lcom/intercom/composer/animation/HideSendButtonAnimatorListener;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="animateButtonVisibility"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZLcom/intercom/composer/animation/AnimationStatus;)V">
+        <parameter
+          name="show"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="animationStatus"
+          type="com.intercom.composer.animation.AnimationStatus"
+          jni-type="Lcom/intercom/composer/animation/AnimationStatus;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/intercom/composer/animation/SendButtonAnimator;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SendButtonAnimator.1"
+      jni-signature="Lcom/intercom/composer/animation/SendButtonAnimator$1;"
+      source-file-name="SendButtonAnimator.java"
+      static="false"
+      visibility="">
+      <implements
+        name="android.animation.ValueAnimator.AnimatorUpdateListener"
+        name-generic-aware="android.animation.ValueAnimator.AnimatorUpdateListener"
+        jni-type="Landroid/animation/ValueAnimator$AnimatorUpdateListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationUpdate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/ValueAnimator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.ValueAnimator"
+          jni-type="Landroid/animation/ValueAnimator;" />
+      </method>
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/animation/AnimatorListenerAdapter;"
+      extends="android.animation.AnimatorListenerAdapter"
+      extends-generic-aware="android.animation.AnimatorListenerAdapter"
+      final="false"
+      name="SendButtonAnimatorListener"
+      jni-signature="Lcom/intercom/composer/animation/SendButtonAnimatorListener;"
+      source-file-name="SendButtonAnimatorListener.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="inputs"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.util.List"
+        type-generic-aware="java.util.List&lt;com.intercom.composer.input.Input&gt;"
+        jni-signature="Ljava/util/List;"
+        visibility="protected"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/intercom/composer/animation/SendButtonAnimatorListener;"
+      extends="com.intercom.composer.animation.SendButtonAnimatorListener"
+      extends-generic-aware="com.intercom.composer.animation.SendButtonAnimatorListener"
+      final="false"
+      name="ShowSendButtonAnimatorListener"
+      jni-signature="Lcom/intercom/composer/animation/ShowSendButtonAnimatorListener;"
+      source-file-name="ShowSendButtonAnimatorListener.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ShowSendButtonAnimatorListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;Lcom/intercom/composer/pager/ComposerPagerAdapter;Landroid/support/v7/widget/RecyclerView$Adapter;Landroid/support/v7/widget/LinearLayoutManager;Lcom/intercom/composer/ComposerAnimationStateListener;)V">
+        <parameter
+          name="inputs"
+          type="java.util.List&lt;com.intercom.composer.input.Input&gt;"
+          jni-type="Ljava/util/List&lt;Lcom/intercom/composer/input/Input;&gt;;" />
+        <parameter
+          name="composerPagerAdapter"
+          type="com.intercom.composer.pager.ComposerPagerAdapter"
+          jni-type="Lcom/intercom/composer/pager/ComposerPagerAdapter;" />
+        <parameter
+          name="recyclerAdapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+        <parameter
+          name="layoutManager"
+          type="android.support.v7.widget.LinearLayoutManager"
+          jni-type="Landroid/support/v7/widget/LinearLayoutManager;" />
+        <parameter
+          name="animationStateListener"
+          type="com.intercom.composer.ComposerAnimationStateListener"
+          jni-type="Lcom/intercom/composer/ComposerAnimationStateListener;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="p0"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationEnd"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAnimationStart"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/animation/Animator;)V">
+        <parameter
+          name="animation"
+          type="android.animation.Animator"
+          jni-type="Landroid/animation/Animator;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.input"
+    jni-name="com/intercom/composer/input">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="IconProvider"
+      jni-signature="Lcom/intercom/composer/input/IconProvider;"
+      source-file-name="IconProvider.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconDrawable"
+        native="false"
+        return="android.graphics.drawable.Drawable"
+        jni-return="Landroid/graphics/drawable/Drawable;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+    </interface>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Input"
+      jni-signature="Lcom/intercom/composer/input/Input;"
+      source-file-name="Input.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Lcom/intercom/composer/input/InputFragment;"
+          classBound="com.intercom.composer.input.InputFragment"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Input"
+        static="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lcom/intercom/composer/input/IconProvider;)V">
+        <parameter
+          name="uniqueIdentifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="iconProvider"
+          type="com.intercom.composer.input.IconProvider"
+          jni-type="Lcom/intercom/composer/input/IconProvider;" />
+      </constructor>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="createFragment"
+        native="false"
+        return="T"
+        jni-return="TT;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/intercom/composer/input/InputFragment;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="findFragment"
+        native="false"
+        return="T"
+        jni-return="TT;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v4/app/FragmentManager;)Lcom/intercom/composer/input/InputFragment;">
+        <parameter
+          name="fragmentManager"
+          type="android.support.v4.app.FragmentManager"
+          jni-type="Landroid/support/v4/app/FragmentManager;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBackgroundColor"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBorderColor"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconDrawable"
+        native="false"
+        return="android.graphics.drawable.Drawable"
+        jni-return="Landroid/graphics/drawable/Drawable;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getUniqueIdentifier"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setFragmentTag"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="fragmentTag"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/app/Fragment;"
+      extends="android.support.v4.app.Fragment"
+      extends-generic-aware="android.support.v4.app.Fragment"
+      final="false"
+      name="InputFragment"
+      jni-signature="Lcom/intercom/composer/input/InputFragment;"
+      source-file-name="InputFragment.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="InputFragment"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputDeselected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputReselected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputSelected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onViewCreated"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;Landroid/os/Bundle;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="passData"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="data"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="passDataOnViewCreated"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="p0"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setArguments"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="newArgs"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ResourceIconProvider"
+      jni-signature="Lcom/intercom/composer/input/ResourceIconProvider;"
+      source-file-name="ResourceIconProvider.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.intercom.composer.input.IconProvider"
+        name-generic-aware="com.intercom.composer.input.IconProvider"
+        jni-type="Lcom/intercom/composer/input/IconProvider;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ResourceIconProvider"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="resId"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconDrawable"
+        native="false"
+        return="android.graphics.drawable.Drawable"
+        jni-return="Landroid/graphics/drawable/Drawable;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;">
+        <parameter
+          name="inputIdentifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.input.empty"
+    jni-name="com/intercom/composer/input/empty">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/intercom/composer/input/InputFragment;"
+      extends="com.intercom.composer.input.InputFragment"
+      extends-generic-aware="com.intercom.composer.input.InputFragment"
+      final="false"
+      name="EmptyFragment"
+      jni-signature="Lcom/intercom/composer/input/empty/EmptyFragment;"
+      source-file-name="EmptyFragment.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="EmptyFragment"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreateView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;">
+        <parameter
+          name="inflater"
+          type="android.view.LayoutInflater"
+          jni-type="Landroid/view/LayoutInflater;" />
+        <parameter
+          name="container"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputDeselected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputReselected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputSelected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="passDataOnViewCreated"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="arguments"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/intercom/composer/input/Input;"
+      extends="com.intercom.composer.input.Input"
+      extends-generic-aware="com.intercom.composer.input.Input&lt;com.intercom.composer.input.empty.EmptyFragment&gt;"
+      final="false"
+      name="EmptyInput"
+      jni-signature="Lcom/intercom/composer/input/empty/EmptyInput;"
+      source-file-name="EmptyInput.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="EmptyInput"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFragment"
+        native="false"
+        return="com.intercom.composer.input.empty.EmptyFragment"
+        jni-return="Lcom/intercom/composer/input/empty/EmptyFragment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/intercom/composer/input/empty/EmptyFragment;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFragment"
+        native="false"
+        return="com.intercom.composer.input.InputFragment"
+        jni-return="Lcom/intercom/composer/input/InputFragment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="()Lcom/intercom/composer/input/InputFragment;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/intercom/composer/input/empty/EmptyInput;"
+      enclosing-method-name="&lt;init&gt;"
+      enclosing-method-signature="()V"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EmptyInput.1"
+      jni-signature="Lcom/intercom/composer/input/empty/EmptyInput$1;"
+      source-file-name="EmptyInput.java"
+      static="false"
+      visibility="">
+      <implements
+        name="com.intercom.composer.input.IconProvider"
+        name-generic-aware="com.intercom.composer.input.IconProvider"
+        jni-type="Lcom/intercom/composer/input/IconProvider;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getIconDrawable"
+        native="false"
+        return="android.graphics.drawable.Drawable"
+        jni-return="Landroid/graphics/drawable/Drawable;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;">
+        <parameter
+          name="inputIdentifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.input.iconbar"
+    jni-name="com/intercom/composer/input/iconbar">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+      extends="android.support.v7.widget.RecyclerView.ViewHolder"
+      extends-generic-aware="android.support.v7.widget.RecyclerView.ViewHolder"
+      final="false"
+      name="EmptyIconViewHolder"
+      jni-signature="Lcom/intercom/composer/input/iconbar/EmptyIconViewHolder;"
+      source-file-name="EmptyIconViewHolder.java"
+      static="false"
+      visibility="" />
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="InputClickedListener"
+      jni-signature="Lcom/intercom/composer/input/iconbar/InputClickedListener;"
+      source-file-name="InputClickedListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputClicked"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;)V">
+        <parameter
+          name="p0"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v7/widget/RecyclerView$ItemDecoration;"
+      extends="android.support.v7.widget.RecyclerView.ItemDecoration"
+      extends-generic-aware="android.support.v7.widget.RecyclerView.ItemDecoration"
+      final="false"
+      name="InputIconRecyclerDecoration"
+      jni-signature="Lcom/intercom/composer/input/iconbar/InputIconRecyclerDecoration;"
+      source-file-name="InputIconRecyclerDecoration.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="InputIconRecyclerDecoration"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getItemOffsets"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/Rect;Landroid/view/View;Landroid/support/v7/widget/RecyclerView;Landroid/support/v7/widget/RecyclerView$State;)V">
+        <parameter
+          name="outRect"
+          type="android.graphics.Rect"
+          jni-type="Landroid/graphics/Rect;" />
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="recyclerView"
+          type="android.support.v7.widget.RecyclerView"
+          jni-type="Landroid/support/v7/widget/RecyclerView;" />
+        <parameter
+          name="state"
+          type="android.support.v7.widget.RecyclerView.State"
+          jni-type="Landroid/support/v7/widget/RecyclerView$State;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v7/widget/RecyclerView$Adapter;"
+      extends="android.support.v7.widget.RecyclerView.Adapter"
+      extends-generic-aware="android.support.v7.widget.RecyclerView.Adapter&lt;android.support.v7.widget.RecyclerView.ViewHolder&gt;"
+      final="false"
+      name="InputIconsRecyclerAdapter"
+      jni-signature="Lcom/intercom/composer/input/iconbar/InputIconsRecyclerAdapter;"
+      source-file-name="InputIconsRecyclerAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="InputIconsRecyclerAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/LayoutInflater;Ljava/util/List;Lcom/intercom/composer/input/iconbar/InputSelectedListener;Lcom/intercom/composer/input/iconbar/InputClickedListener;Landroid/support/v4/app/FragmentManager;)V">
+        <parameter
+          name="layoutInflater"
+          type="android.view.LayoutInflater"
+          jni-type="Landroid/view/LayoutInflater;" />
+        <parameter
+          name="inputs"
+          type="java.util.List&lt;com.intercom.composer.input.Input&gt;"
+          jni-type="Ljava/util/List&lt;Lcom/intercom/composer/input/Input;&gt;;" />
+        <parameter
+          name="onInputIconSelectedListener"
+          type="com.intercom.composer.input.iconbar.InputSelectedListener"
+          jni-type="Lcom/intercom/composer/input/iconbar/InputSelectedListener;" />
+        <parameter
+          name="inputClickedListener"
+          type="com.intercom.composer.input.iconbar.InputClickedListener"
+          jni-type="Lcom/intercom/composer/input/iconbar/InputClickedListener;" />
+        <parameter
+          name="fragmentManager"
+          type="android.support.v4.app.FragmentManager"
+          jni-type="Landroid/support/v4/app/FragmentManager;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="deselectAllInputs"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getItemCount"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getItemViewType"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSelectedInput"
+        native="false"
+        return="com.intercom.composer.input.Input"
+        jni-return="Lcom/intercom/composer/input/Input;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/intercom/composer/input/Input;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hideAllInputsExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)V">
+        <parameter
+          name="visibleInputIdentifiers"
+          type="java.util.List&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onBindViewHolder"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V">
+        <parameter
+          name="viewHolder"
+          type="android.support.v7.widget.RecyclerView.ViewHolder"
+          jni-type="Landroid/support/v7/widget/RecyclerView$ViewHolder;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreateViewHolder"
+        native="false"
+        return="android.support.v7.widget.RecyclerView.ViewHolder"
+        jni-return="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/ViewGroup;I)Landroid/support/v7/widget/RecyclerView$ViewHolder;">
+        <parameter
+          name="parent"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+        <parameter
+          name="viewType"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="selectInput"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/Input;ZZ)Z">
+        <parameter
+          name="input"
+          type="com.intercom.composer.input.Input"
+          jni-type="Lcom/intercom/composer/input/Input;" />
+        <parameter
+          name="showKeyboard"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="animateEditText"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="showAllInputs"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+      extends="android.support.v7.widget.RecyclerView.ViewHolder"
+      extends-generic-aware="android.support.v7.widget.RecyclerView.ViewHolder"
+      final="false"
+      name="InputIconViewHolder"
+      jni-signature="Lcom/intercom/composer/input/iconbar/InputIconViewHolder;"
+      source-file-name="InputIconViewHolder.java"
+      static="false"
+      visibility="">
+      <implements
+        name="android.view.View.OnClickListener"
+        name-generic-aware="android.view.View.OnClickListener"
+        jni-type="Landroid/view/View$OnClickListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="view"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="InputSelectedListener"
+      jni-signature="Lcom/intercom/composer/input/iconbar/InputSelectedListener;"
+      source-file-name="InputSelectedListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputSelected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/Input;IZZ)V">
+        <parameter
+          name="p0"
+          type="com.intercom.composer.input.Input"
+          jni-type="Lcom/intercom/composer/input/Input;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p2"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="p3"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </interface>
+  </package>
+  <package
+    name="com.intercom.composer.input.text"
+    jni-name="com/intercom/composer/input/text">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SendTextCallback"
+      jni-signature="Lcom/intercom/composer/input/text/SendTextCallback;"
+      source-file-name="SendTextCallback.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="textToBeSent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/Input;Ljava/lang/CharSequence;)V">
+        <parameter
+          name="p0"
+          type="com.intercom.composer.input.Input"
+          jni-type="Lcom/intercom/composer/input/Input;" />
+        <parameter
+          name="p1"
+          type="java.lang.CharSequence"
+          jni-type="Ljava/lang/CharSequence;" />
+      </method>
+    </interface>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Lcom/intercom/composer/input/Input;"
+      extends="com.intercom.composer.input.Input"
+      extends-generic-aware="com.intercom.composer.input.Input&lt;T&gt;"
+      final="false"
+      name="TextInput"
+      jni-signature="Lcom/intercom/composer/input/text/TextInput;"
+      source-file-name="TextInput.java"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Lcom/intercom/composer/input/InputFragment;"
+          classBound="com.intercom.composer.input.InputFragment"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextInput"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lcom/intercom/composer/input/IconProvider;Lcom/intercom/composer/input/text/SendTextCallback;)V">
+        <parameter
+          name="uniqueIdentifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="iconProvider"
+          type="com.intercom.composer.input.IconProvider"
+          jni-type="Lcom/intercom/composer/input/IconProvider;" />
+        <parameter
+          name="sendTextCallback"
+          type="com.intercom.composer.input.text.SendTextCallback"
+          jni-type="Lcom/intercom/composer/input/text/SendTextCallback;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextInput"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lcom/intercom/composer/input/IconProvider;Lcom/intercom/composer/input/text/SendTextCallback;Ljava/util/List;)V">
+        <parameter
+          name="uniqueIdentifier"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="iconProvider"
+          type="com.intercom.composer.input.IconProvider"
+          jni-type="Lcom/intercom/composer/input/IconProvider;" />
+        <parameter
+          name="sendTextCallback"
+          type="com.intercom.composer.input.text.SendTextCallback"
+          jni-type="Lcom/intercom/composer/input/text/SendTextCallback;" />
+        <parameter
+          name="options"
+          type="java.util.List&lt;com.intercom.composer.input.text.options.TextInputOption&gt;"
+          jni-type="Ljava/util/List&lt;Lcom/intercom/composer/input/text/options/TextInputOption;&gt;;" />
+      </constructor>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="createEditText"
+        native="false"
+        return="android.widget.EditText"
+        jni-return="Landroid/widget/EditText;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/widget/EditText;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getEditText"
+        native="false"
+        return="android.widget.EditText"
+        jni-return="Landroid/widget/EditText;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/widget/EditText;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOptions"
+        native="false"
+        return="java.util.List&lt;com.intercom.composer.input.text.options.TextInputOption&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/intercom/composer/input/text/options/TextInputOption;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="sendTextBack"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/CharSequence;)V">
+        <parameter
+          name="charSequence"
+          type="java.lang.CharSequence"
+          jni-type="Ljava/lang/CharSequence;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.input.text.listener"
+    jni-name="com/intercom/composer/input/text/listener">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="OnSendButtonClickedListener"
+      jni-signature="Lcom/intercom/composer/input/text/listener/OnSendButtonClickedListener;"
+      source-file-name="OnSendButtonClickedListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onSendButtonClicked"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/CharSequence;)V">
+        <parameter
+          name="p0"
+          type="java.lang.CharSequence"
+          jni-type="Ljava/lang/CharSequence;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SendButtonClickListener"
+      jni-signature="Lcom/intercom/composer/input/text/listener/SendButtonClickListener;"
+      source-file-name="SendButtonClickListener.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.view.View.OnClickListener"
+        name-generic-aware="android.view.View.OnClickListener"
+        jni-type="Landroid/view/View$OnClickListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SendButtonClickListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/text/listener/OnSendButtonClickedListener;Landroid/widget/EditText;)V">
+        <parameter
+          name="listener"
+          type="com.intercom.composer.input.text.listener.OnSendButtonClickedListener"
+          jni-type="Lcom/intercom/composer/input/text/listener/OnSendButtonClickedListener;" />
+        <parameter
+          name="editText"
+          type="android.widget.EditText"
+          jni-type="Landroid/widget/EditText;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="v"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.input.text.options"
+    jni-name="com/intercom/composer/input/text/options">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="InputOptionClickListener"
+      jni-signature="Lcom/intercom/composer/input/text/options/InputOptionClickListener;"
+      source-file-name="InputOptionClickListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onInputOptionClicked"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="InputOptionImageViewClickListener"
+      jni-signature="Lcom/intercom/composer/input/text/options/InputOptionImageViewClickListener;"
+      source-file-name="InputOptionImageViewClickListener.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.view.View.OnClickListener"
+        name-generic-aware="android.view.View.OnClickListener"
+        jni-type="Landroid/view/View$OnClickListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="InputOptionImageViewClickListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/input/text/options/TextInputOption;)V">
+        <parameter
+          name="option"
+          type="com.intercom.composer.input.text.options.TextInputOption"
+          jni-type="Lcom/intercom/composer/input/text/options/TextInputOption;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="v"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="TextInputOption"
+      jni-signature="Lcom/intercom/composer/input/text/options/TextInputOption;"
+      source-file-name="TextInputOption.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="TextInputOption"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILcom/intercom/composer/input/text/options/InputOptionClickListener;)V">
+        <parameter
+          name="iconResource"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="inputOptionClickListener"
+          type="com.intercom.composer.input.text.options.InputOptionClickListener"
+          jni-type="Lcom/intercom/composer/input/text/options/InputOptionClickListener;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getResourceId"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="inputOptionClicked"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.keyboard"
+    jni-name="com/intercom/composer/keyboard">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="KeyboardHelper"
+      jni-signature="Lcom/intercom/composer/keyboard/KeyboardHelper;"
+      source-file-name="KeyboardHelper.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.intercom.composer.keyboard.OnKeyboardVisibilityListener"
+        name-generic-aware="com.intercom.composer.keyboard.OnKeyboardVisibilityListener"
+        jni-type="Lcom/intercom/composer/keyboard/OnKeyboardVisibilityListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="KeyboardHelper"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/intercom/composer/keyboard/OrientationProvider;Landroid/view/View;Landroid/view/View;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="orientationProvider"
+          type="com.intercom.composer.keyboard.OrientationProvider"
+          jni-type="Lcom/intercom/composer/keyboard/OrientationProvider;" />
+        <parameter
+          name="editText"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="behindKeyboardView"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hideBehindKeyboardView"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onKeyboardVisibilityChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZI)V">
+        <parameter
+          name="visible"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="height"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="showBehindKeyboardView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="KeyboardManager"
+      jni-signature="Lcom/intercom/composer/keyboard/KeyboardManager;"
+      source-file-name="KeyboardManager.java"
+      static="false"
+      visibility="">
+      <implements
+        name="android.view.ViewTreeObserver.OnGlobalLayoutListener"
+        name-generic-aware="android.view.ViewTreeObserver.OnGlobalLayoutListener"
+        jni-type="Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;" />
+      <implements
+        name="com.intercom.composer.keyboard.OnKeyboardVisibilityListener"
+        name-generic-aware="com.intercom.composer.keyboard.OnKeyboardVisibilityListener"
+        jni-type="Lcom/intercom/composer/keyboard/OnKeyboardVisibilityListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onGlobalLayout"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onKeyboardVisibilityChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZI)V">
+        <parameter
+          name="visible"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="height"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="OnKeyboardVisibilityListener"
+      jni-signature="Lcom/intercom/composer/keyboard/OnKeyboardVisibilityListener;"
+      source-file-name="OnKeyboardVisibilityListener.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onKeyboardVisibilityChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZI)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="OrientationProvider"
+      jni-signature="Lcom/intercom/composer/keyboard/OrientationProvider;"
+      source-file-name="OrientationProvider.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="OrientationProvider"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOrientation"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.pager"
+    jni-name="com/intercom/composer/pager">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/app/FragmentPagerAdapter;"
+      extends="android.support.v4.app.FragmentPagerAdapter"
+      extends-generic-aware="android.support.v4.app.FragmentPagerAdapter"
+      final="false"
+      name="ComposerPagerAdapter"
+      jni-signature="Lcom/intercom/composer/pager/ComposerPagerAdapter;"
+      source-file-name="ComposerPagerAdapter.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ComposerPagerAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v4/app/FragmentManager;Ljava/util/List;)V">
+        <parameter
+          name="fm"
+          type="android.support.v4.app.FragmentManager"
+          jni-type="Landroid/support/v4/app/FragmentManager;" />
+        <parameter
+          name="inputs"
+          type="java.util.List&lt;? extends com.intercom.composer.input.Input&gt;"
+          jni-type="Ljava/util/List&lt;+Lcom/intercom/composer/input/Input;&gt;;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCount"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getItem"
+        native="false"
+        return="android.support.v4.app.Fragment"
+        jni-return="Landroid/support/v4/app/Fragment;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Landroid/support/v4/app/Fragment;">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="instantiateItem"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/ViewGroup;I)Ljava/lang/Object;">
+        <parameter
+          name="container"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/view/ViewPager;"
+      extends="android.support.v4.view.ViewPager"
+      extends-generic-aware="android.support.v4.view.ViewPager"
+      final="false"
+      name="NonSwipeableViewPager"
+      jni-signature="Lcom/intercom/composer/pager/NonSwipeableViewPager;"
+      source-file-name="NonSwipeableViewPager.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="NonSwipeableViewPager"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="attrs"
+          type="android.util.AttributeSet"
+          jni-type="Landroid/util/AttributeSet;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInterceptTouchEvent"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="event"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onTouchEvent"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="event"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.intercom.composer.watcher"
+    jni-name="com/intercom/composer/watcher">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="OnSendButtonStateChangedListener"
+      jni-signature="Lcom/intercom/composer/watcher/OnSendButtonStateChangedListener;"
+      source-file-name="OnSendButtonStateChangedListener.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="animateSendButtonVisibility"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SendButtonTextWatcher"
+      jni-signature="Lcom/intercom/composer/watcher/SendButtonTextWatcher;"
+      source-file-name="SendButtonTextWatcher.java"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.text.TextWatcher"
+        name-generic-aware="android.text.TextWatcher"
+        jni-type="Landroid/text/TextWatcher;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SendButtonTextWatcher"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/intercom/composer/watcher/OnSendButtonStateChangedListener;)V">
+        <parameter
+          name="listener"
+          type="com.intercom.composer.watcher.OnSendButtonStateChangedListener"
+          jni-type="Lcom/intercom/composer/watcher/OnSendButtonStateChangedListener;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="afterTextChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/text/Editable;)V">
+        <parameter
+          name="editable"
+          type="android.text.Editable"
+          jni-type="Landroid/text/Editable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="beforeTextChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/CharSequence;III)V">
+        <parameter
+          name="s"
+          type="java.lang.CharSequence"
+          jni-type="Ljava/lang/CharSequence;" />
+        <parameter
+          name="start"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="count"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="after"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onTextChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/CharSequence;III)V">
+        <parameter
+          name="s"
+          type="java.lang.CharSequence"
+          jni-type="Ljava/lang/CharSequence;" />
+        <parameter
+          name="start"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="before"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="count"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+  </package>
+</api>

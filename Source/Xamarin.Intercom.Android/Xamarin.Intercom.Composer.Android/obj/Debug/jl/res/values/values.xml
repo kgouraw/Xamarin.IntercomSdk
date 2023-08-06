@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="intercom_composer_keyboard_takes_full_screen_in_landscape">true</bool>
+    <color name="intercom_composer_blue">#1E88E5</color>
+    <color name="intercom_composer_border">#D8E1E6</color>
+    <color name="intercom_composer_semi_transparent_black">#CC000000</color>
+    <color name="intercom_composer_white">#FFFFFF</color>
+    <dimen name="intercom_composer_editable_text_input_option_padding">16dp</dimen>
+    <dimen name="intercom_composer_editable_text_input_option_padding_bottom">10dp</dimen>
+    <dimen name="intercom_composer_icon_bar_height">48dp</dimen>
+    <dimen name="intercom_composer_icon_bar_left_spacing">6dp</dimen>
+    <dimen name="intercom_composer_keyboard_landscape_height">200dp</dimen>
+    <dimen name="intercom_composer_keyboard_portrait_height">300dp</dimen>
+    <dimen name="intercom_composer_send_button_fading_background_width">68dp</dimen>
+    <string name="intercom_composer_send_button_content_description">Send button</string>
+</resources>

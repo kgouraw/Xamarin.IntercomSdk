@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/Xamarin.Intercom.iOS.csproj": {}
+  },
+  "projects": {
+    "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/Xamarin.Intercom.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/Xamarin.Intercom.iOS.csproj",
+        "projectName": "Xamarin.Intercom.iOS",
+        "projectPath": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/Xamarin.Intercom.iOS.csproj",
+        "packagesPath": "/Users/kumargouraw/.nuget/packages/",
+        "outputPath": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/kumargouraw/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {},
+          "https://tylertech.jfrog.io/artifactory/api/nuget/v3/nuget": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "NuGet.Build.Packaging": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.2.2, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

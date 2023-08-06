@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wbR1opE4BNFfthNuFig/PBygsTLFpFc714M/H9lHY0Vhq0/ywD5kt9OVMhlhMfVs3R4w0qmIBr4L9xnaqggMZw==",
+  "success": true,
+  "projectFilePath": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Gallery.Android/Xamarin.Intercom.Composer.Gallery.Android.csproj",
+  "expectedPackageFiles": [
+    "/Users/kumargouraw/.nuget/packages/nuget.build.packaging/0.2.2/nuget.build.packaging.0.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

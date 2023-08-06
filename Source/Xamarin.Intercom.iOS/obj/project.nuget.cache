@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "oh3HFLctumFDxRgEUgxO16gs3I1y8tKvSl86CGgjFFF9Mpuoiv6b9qN/7Y20nK7vCbbtcD2lqdxLRnGkKUOMxw==",
+  "success": true,
+  "projectFilePath": "/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/Xamarin.Intercom.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/kumargouraw/.nuget/packages/nuget.build.packaging/0.2.2/nuget.build.packaging.0.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,6 @@
+/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Android/obj/Debug/__AndroidLibraryProjects__.zip
+/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Android/obj/Debug/MonoAndroid,Version=v10.0.AssemblyAttributes.cs
+/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Android/obj/Debug/Xamarin.Intercom.Composer.Android.csproj.AssemblyReference.cache
+/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Android/obj/Debug/stamp/_BuildLibraryImportsCache.stamp
+/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Android/obj/Debug/class-parse.rsp
+/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.Android/Xamarin.Intercom.Composer.Android/obj/Debug/java-resolution-report.log

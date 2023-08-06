@@ -1,0 +1,49 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iOS", "iOS", "{1B439D5B-99D7-4477-9962-5908880F510B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{FA2056FF-E0E1-4E39-A837-5FC6A363B596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Intercom.iOS", "Xamarin.Intercom.iOS\Xamarin.Intercom.iOS.csproj", "{14CA27FA-5231-4C52-B1EC-89373419C961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Intercom.Android", "Xamarin.Intercom.Android\Xamarin.Intercom.Android.csproj", "{84CB3A33-9E2B-4551-8258-19F9E8CE21BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Intercom.Composer.Android", "Xamarin.Intercom.Android\Xamarin.Intercom.Composer.Android\Xamarin.Intercom.Composer.Android.csproj", "{E5D51EBA-FB58-4838-9198-D312CFD1BE94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Intercom.Composer.Gallery.Android", "Xamarin.Intercom.Android\Xamarin.Intercom.Composer.Gallery.Android\Xamarin.Intercom.Composer.Gallery.Android.csproj", "{6BE1370E-5D6A-41BF-86A5-FCF0863148C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EAE5138-8A5D-46FF-BB21-77286080BF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EAE5138-8A5D-46FF-BB21-77286080BF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EAE5138-8A5D-46FF-BB21-77286080BF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EAE5138-8A5D-46FF-BB21-77286080BF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14CA27FA-5231-4C52-B1EC-89373419C961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CA27FA-5231-4C52-B1EC-89373419C961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CA27FA-5231-4C52-B1EC-89373419C961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CA27FA-5231-4C52-B1EC-89373419C961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84CB3A33-9E2B-4551-8258-19F9E8CE21BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CB3A33-9E2B-4551-8258-19F9E8CE21BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CB3A33-9E2B-4551-8258-19F9E8CE21BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CB3A33-9E2B-4551-8258-19F9E8CE21BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D51EBA-FB58-4838-9198-D312CFD1BE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D51EBA-FB58-4838-9198-D312CFD1BE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D51EBA-FB58-4838-9198-D312CFD1BE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D51EBA-FB58-4838-9198-D312CFD1BE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE1370E-5D6A-41BF-86A5-FCF0863148C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE1370E-5D6A-41BF-86A5-FCF0863148C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE1370E-5D6A-41BF-86A5-FCF0863148C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE1370E-5D6A-41BF-86A5-FCF0863148C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14CA27FA-5231-4C52-B1EC-89373419C961} = {1B439D5B-99D7-4477-9962-5908880F510B}
+		{84CB3A33-9E2B-4551-8258-19F9E8CE21BC} = {FA2056FF-E0E1-4E39-A837-5FC6A363B596}
+		{E5D51EBA-FB58-4838-9198-D312CFD1BE94} = {FA2056FF-E0E1-4E39-A837-5FC6A363B596}
+		{6BE1370E-5D6A-41BF-86A5-FCF0863148C1} = {FA2056FF-E0E1-4E39-A837-5FC6A363B596}
+	EndGlobalSection
+EndGlobal

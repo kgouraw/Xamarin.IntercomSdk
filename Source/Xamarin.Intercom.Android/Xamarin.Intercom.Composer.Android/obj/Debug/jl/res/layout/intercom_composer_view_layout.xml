@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View android:id="@+id/composer_upper_border"
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/intercom_composer_border"/>
+
+    <LinearLayout
+        android:id="@+id/composer_edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/intercom_composer_icon_bar_height"
+                    android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/composer_input_icons_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- send_button_fading_background_width = 68dp = 36dp (width of send button, i.e. width of this view as well) + 16dp + 16dp (horizontal margins) -->
+        <View android:id="@+id/send_button_fading_background"
+              android:layout_width="@dimen/intercom_composer_send_button_fading_background_width"
+              android:layout_height="wrap_content"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:background="@color/intercom_composer_white"/>
+
+        <ImageView android:id="@+id/send_button"
+                   android:layout_width="36dp"
+                   android:layout_height="36dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginEnd="16dp"
+                   android:layout_marginRight="16dp"
+                   android:layout_marginTop="6dp"
+                   android:background="@drawable/intercom_composer_send_background"
+                   android:contentDescription="@string/intercom_composer_send_button_content_description"
+                   android:elevation="4dp"
+                   android:paddingLeft="11dp"
+                   android:paddingRight="8dp"
+                   android:src="@drawable/intercom_composer_ic_send"/>
+
+    </RelativeLayout>
+
+    <View android:id="@+id/composer_lower_border"
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/intercom_composer_border"/>
+
+    <com.intercom.composer.pager.NonSwipeableViewPager
+        android:id="@+id/composer_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/intercom_composer_white"/>
+
+</merge>

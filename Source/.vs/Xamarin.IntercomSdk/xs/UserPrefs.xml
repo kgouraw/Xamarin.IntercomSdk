@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{84CB3A33-9E2B-4551-8258-19F9E8CE21BC}|Default">
+  <MonoDevelop.Ide.ItemProperties.Android.Xamarin.Intercom.Android PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Xamarin.IntercomSdk" expanded="True" selected="True">
+            <Node name="Android" expanded="True" />
+            <Node name="iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
