@@ -4,13 +4,18 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../.gitignore">
+    <Files>
+      <File FileName="../.gitignore" Line="405" Column="15" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Xamarin.IntercomSdk" expanded="True" selected="True">
+          <Node name="Xamarin.IntercomSdk" expanded="True">
             <Node name="Android" expanded="True" />
-            <Node name="iOS" expanded="True" />
+            <Node name="iOS" expanded="True">
+              <Node name="Xamarin.Intercom.iOS" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

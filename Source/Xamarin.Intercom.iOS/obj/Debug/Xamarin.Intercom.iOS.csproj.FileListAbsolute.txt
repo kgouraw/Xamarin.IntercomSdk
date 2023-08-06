@@ -1,8 +1,0 @@
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/bin/Debug/Xamarin.Intercom.iOS.dll
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/bin/Debug/Xamarin.Intercom.iOS.pdb
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/obj/Debug/_ProcessedBundleResourcesPath.items
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/obj/Debug/_ProcessedContentPath.items
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/obj/Debug/Xamarin.Intercom.iOS.csproj.AssemblyReference.cache
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/obj/Debug/Xamarin.Intercom.iOS.csproj.CoreCompileInputs.cache
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/obj/Debug/Xamarin.Intercom.iOS.dll
-/Users/kumargouraw/Documents/Dev/Xamarin.IntercomSdk/Source/Xamarin.Intercom.iOS/obj/Debug/Xamarin.Intercom.iOS.pdb
